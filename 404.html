@@ -3,18 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>404 — ASHDRIFT</title>
   <meta name="robots" content="noindex">
+
   <style>
     :root {
-      color-scheme: dark;
       --bg: #111210;
       --text: #ecece7;
       --muted: #a6a99f;
-      --line: #30332d;
+      --accent: #bac7a7;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -24,28 +27,75 @@
       padding: 2rem;
       background: var(--bg);
       color: var(--text);
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family:
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
     }
 
     main {
-      width: min(100%, 42rem);
-      border-top: 1px solid var(--line);
-      padding-top: 2rem;
+      width: min(100%, 640px);
+    }
+
+    .code {
+      margin-bottom: 1rem;
+      color: var(--accent);
+      font-family:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Consolas,
+        monospace;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(3rem, 10vw, 6rem);
+      line-height: 1;
+      letter-spacing: -0.05em;
     }
 
     p {
+      max-width: 500px;
+      margin: 1.5rem 0 2rem;
       color: var(--muted);
+      font-size: 1.1rem;
       line-height: 1.6;
     }
 
-    a { color: var(--text); }
+    a {
+      display: inline-block;
+      padding-bottom: 0.2rem;
+      border-bottom: 1px solid var(--accent);
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus-visible {
+      color: var(--accent);
+    }
   </style>
 </head>
+
 <body>
   <main>
-    <h1>404</h1>
-    <p>The requested page was not found.</p>
-    <p><a href="/">Return to ASHDRIFT</a></p>
+    <div class="code">404 / Trace not found</div>
+
+    <h1>Nothing here.</h1>
+
+    <p>
+      this page isn't here or it never
+      existed in the first place.
+    </p>
+
+    <a href="/">Return to ASHDRIFT</a>
   </main>
 </body>
 </html>
