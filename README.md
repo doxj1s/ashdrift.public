@@ -1,6 +1,8 @@
 # ASHDRIFT.org
 
-Public-facing website for [ASHDRIFT](https://ashdrift.org), a local-first, open-source privacy project for discovering, reducing, hardening, and monitoring digital exposure.
+Static public landing page for ASHDRIFT.org.
+
+No application code, credentials, private notes, deployment secrets, or user data belong in this repository.
 
 ## Structure
 
